@@ -1,0 +1,67 @@
+Microsoft Windows [Version 10.0.19045.3570]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\sueha>git config --global user.name
+shigehisa1216
+
+C:\Users\sueha>git confug --global user.email
+git: 'confug' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+C:\Users\sueha>git config --global user.email
+s.uehara@ace-techno.com
+
+C:\Users\sueha>git config --global --list
+core.editor="C:\Users\sueha\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+user.name=shigehisa1216
+user.email=s.uehara@ace-techno.com
+
+C:\Users\sueha>cd hello_world.txt
+指定されたパスが見つかりません。
+
+C:\Users\sueha>cd C:\Users\sueha\git_challenge\hello_world.txt
+ディレクトリ名が無効です。
+
+C:\Users\sueha>cd C:\Users\sueha\git_challenge
+
+C:\Users\sueha\git_challenge>git add hello_world
+fatal: pathspec 'hello_world' did not match any files
+
+C:\Users\sueha\git_challenge>git add hello_world.txt
+
+C:\Users\sueha\git_challenge>git commit hello_world.txt
+Aborting commit due to empty commit message.
+
+C:\Users\sueha\git_challenge>
+C:\Users\sueha\git_challenge>git commit -m "最初のコミット"
+[main (root-commit) 6c0d7ca] 最初のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+C:\Users\sueha\git_challenge>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\sueha\git_challenge>git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\sueha\git_challenge>git add hello_world.txt
+
+C:\Users\sueha\git_challenge>git commit -m "日本語訳を追記"
+[main 90f7273] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\sueha\git_challenge>git log --oneline
+90f7273 (HEAD -> main) 日本語訳を追記
+6c0d7ca 最初のコミット
+
+C:\Users\sueha\git_challenge>
+
